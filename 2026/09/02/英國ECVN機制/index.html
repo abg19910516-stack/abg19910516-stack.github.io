@@ -14,7 +14,7 @@
 <meta property="og:description" content="ECVN(Energy Contract Volume Notification, 能源合約電量通知)是英國電力市場中重要的關鍵配套，其核心目的是為了解決電力自由交易下的資訊不對稱情況，像是發電業私自與售電業簽訂的PPA合約。這樣的資訊不對稱，造成電網供需不平衡問題，而ECVN機制將維持電網供需平衡的責任，進行合理切割與歸屬。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-09-02T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-09-04T08:17:54.169Z">
+<meta property="article:modified_time" content="2026-09-04T08:32:53.306Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力交易">
 <meta property="article:tag" content="電力系統">
@@ -106,27 +106,27 @@
 
 <h2 id="核心目標"><a href="#核心目標" class="headerlink" title="核心目標"></a>核心目標</h2><p>在英國，發電商與售電商、用戶可以自由地簽訂各項合約，遠期、日前與當日都可以，並且這些都無須上報，屬於雙方的商業機密，是不同於公開電力市場的售電途徑。這時電網不知道市場的參與者私下買賣了多少電，當雙方出現與合約有差的用電與發電需求時，會造成整體電網需要吸收電力不平衡的成本，而不是未正確履約的發電商與售電商、用戶。在此ECVN就扮演了公正的裁判，私下簽訂契約的買賣雙方有責任進行ECVN通報，揭露合約的發購電量排程，解決供需不平衡的責任歸屬。</p>
 <h2 id="各項角色"><a href="#各項角色" class="headerlink" title="各項角色"></a>各項角色</h2><ul>
-<li>Relevant Contract Parties：在ECVN中，實際參與ECVN交易的買賣雙方。<ul>
-<li>Single Relevant Contract Party：在ECVN中，一間公司同時參與ECVN交易的買賣雙方，像是同時擁有發電、售電業物的電力巨頭，進行集團內的合約電量轉移。</li>
+<li>Relevant Contract Parties(相關合約方)：在ECVN中，實際參與ECVN交易的買賣雙方。<ul>
+<li>Single Relevant Contract Party：同時為ECVN交易的買賣雙方，像是同時擁有發電、售電業物的電力巨頭，進行集團內的合約電量轉移。</li>
 </ul>
 </li>
-<li>Energy Contract Volume Notification Agent (ECVNA)：在ECVN通報中，負責提交ECVN相關操作的代理者。在規定中，買賣雙方須共同指派代理人(Single Energy Contract Volume Notification Agent)，亦即同時代理買賣雙方，無法切割身分，以避免出現申報衝突。</li>
-<li>Energy Contract Volume Aggregation Agent (ECVAA)：在ECVN通報中，負責收件、審核以及”加總”等行政流程的官方代理人，所有ECVNA皆須透過ECVAA執行ECVN相關流程。</li>
-<li>Energy (From)&#x2F;(To) Account：在ECVN中，紀錄合約電量轉出轉入的帳戶，用戶可以轉出或轉入，電量流向是彈性且雙向的。<ul>
+<li>Energy Contract Volume Notification Agent (ECVNA, ECVN代理)：在ECVN通報中，負責提交ECVN相關操作的代理者。在規定中，買賣雙方須共同指派代理人，亦即同時代理買賣雙方，無法切割身分，以避免出現申報衝突。</li>
+<li>Energy Contract Volume Aggregation Agent (ECVAA, ECVN彙總代理)：在ECVN通報中，負責收件、審核以及”加總”等行政流程的官方代理人，所有ECVNA皆須透過ECVAA執行ECVN相關流程。</li>
+<li>Energy (From)&#x2F;(To) Account(電力帳戶)：在ECVN中，紀錄合約電量轉出轉入的帳戶，用戶可以轉出或轉入，電量流向是彈性且雙向的。<ul>
 <li>Energy (From) Account：指定扣除合約電量的賣方帳戶(發電)。</li>
 <li>Energy (To) Account：指定接收合約電量的買方帳戶(用電)。</li>
 </ul>
 </li>
 </ul>
-<h2 id="三種ECVN上傳型態"><a href="#三種ECVN上傳型態" class="headerlink" title="三種ECVN上傳型態"></a>三種ECVN上傳型態</h2><ol>
+<h2 id="ECVN的運作流程"><a href="#ECVN的運作流程" class="headerlink" title="ECVN的運作流程"></a>ECVN的運作流程</h2><ol>
+<li><p>合約授權<br>在開始正式提交ECVN通知之前，”相關合約方”需要共同授權一個”ECVNA代理”，授權書中需交代”ECVN代理”、”相關合約方”的”電力帳戶”、授權生效日。授權書中亦可交代”ECVN代理”的權限，像是只能”追加合約通知”或是只能”代替合約通知”。授權經過確認後，會由”ECVN彙總代理”發出通知”相關合約方”與”ECVN代理”三方。</p>
+</li>
+<li><p>提交ECVN通知<br>ECVN通知提交都需要交由”ECVN代理”，且一定是同時代理買賣雙方。提交的ECVN通知共有三種型式：</p>
+<ol>
 <li>Initial ECVN (初始合約通知)：針對特定電量排程的首次提交。</li>
 <li>Additional ECVN (追加合約通知)：針對有過初始合約通知的排程，新增電量。</li>
 <li>Replacement ECVN (代替合約通知)：覆蓋舊有合約通知的更新。</li>
 </ol>
-<h2 id="ECVN的運作流程"><a href="#ECVN的運作流程" class="headerlink" title="ECVN的運作流程"></a>ECVN的運作流程</h2><ol>
-<li><p>合約授權<br>在開始正式提交ECVN通知之前，</p>
-</li>
-<li><p>提交ECVN通知</p>
 </li>
 <li><p>驗證與信用檢查</p>
 </li>
@@ -137,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://abg19910516-stack.github.io/2026/09/02/%E8%8B%B1%E5%9C%8BECVN%E6%A9%9F%E5%88%B6/" data-id="cmtmom32s00090wi5efdheuu0" data-title="英國ECVN機制" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://abg19910516-stack.github.io/2026/09/02/%E8%8B%B1%E5%9C%8BECVN%E6%A9%9F%E5%88%B6/" data-id="cmtmp52z4000948i5c7yu144s" data-title="英國ECVN機制" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
