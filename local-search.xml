@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>併網型儲能設備併網申請作業程序筆記</title>
+    <link href="/posts/cb8d9fee318d/"/>
+    <url>/posts/cb8d9fee318d/</url>
+    
+    <content type="html"><![CDATA[<p>解析台灣電力交易平台「併網型儲能設備併網申請作業程序」，並做成此筆記。</p><span id="more"></span><h2 id="資料來源"><a href="#資料來源" class="headerlink" title="資料來源"></a>資料來源</h2><p><a href="https://etp.taipower.com.tw/web/market_rule">電力交易平台-市場規則</a><br>市場規則中的「併網型儲能設備併網申請作業程序」<br>版本：TPC-MT-C0202-v07-2</p><h2 id="併網型儲能設備併網申請作業程序"><a href="#併網型儲能設備併網申請作業程序" class="headerlink" title="併網型儲能設備併網申請作業程序"></a>併網型儲能設備併網申請作業程序</h2><p>作業程序中共有三個不同的角色：</p><ul><li>經濟部標準檢驗局<ul><li>各項標準(如：VPC)的訂定與管理者。</li></ul></li><li>併網型儲能設備業者<ul><li>申請人</li></ul></li><li>台電公司<ul><li>涉及電網相關業務的審查者。</li></ul></li></ul><h3 id="併網型儲能設備設置安全審查程序"><a href="#併網型儲能設備設置安全審查程序" class="headerlink" title="併網型儲能設備設置安全審查程序"></a>併網型儲能設備設置安全審查程序</h3><ol><li><strong>併網型儲能設備業者</strong>向<strong>台電公司</strong>申請<strong>併聯審查</strong></li></ol><ul><li>申請併聯審查前，應依經濟部「併網型儲能系統設置區域及設置安全規範」，由用地管理機關進行審查並取得設置同意函。</li><li>設置併網型儲能設備之特定電力供應業，應根據「電業登記規則」於設置前申請同意備案，經核准才可開工。</li><li>儲能系統併網前亦應由各區營業處依據「台灣電力公司新增設用戶用電設備檢驗要點」辦理用戶用電設備審查。</li><li>併網審查由併網點所轄之本公司<strong>區營業處</strong>辦理(申請窗口)，審查單位則照以下電壓等級區分：<ul><li>未達69kV 者由各<strong>區營業處</strong>依「配電級併網型暨用戶內線型儲能系統併聯審查作業須知」辦理。</li><li>69kV 以上者由<strong>系統規劃處</strong>依「輸電級併網型儲能系統併聯審查作業須知」辦理。</li></ul></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>電力工程</category>
+      
+      <category>電力交易</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>電力交易</tag>
+      
+      <tag>電力系統</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>英國電力交易的歷史沿革</title>
     <link href="/posts/a4bccb5b13a4/"/>
     <url>/posts/a4bccb5b13a4/</url>
