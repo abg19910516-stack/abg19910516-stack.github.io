@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析台灣戶外儲能案場VPC驗證制度，並做成此筆記。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-10-22T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-10-27T03:46:57.006Z">
+<meta property="article:modified_time" content="2026-10-27T08:28:13.408Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="儲能系統">
 <meta property="article:tag" content="電力系統">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          740 字
+          1.2k 字
         
       </span>
     
@@ -354,7 +354,7 @@
         
         
         
-          7 分鐘
+          10 分鐘
         
       </span>
     
@@ -402,26 +402,35 @@
 <span id="more"></span>
 
 <h2 id="戶外儲能案場VPC制度"><a href="#戶外儲能案場VPC制度" class="headerlink" title="戶外儲能案場VPC制度"></a>戶外儲能案場VPC制度</h2><h3 id="制度目標"><a href="#制度目標" class="headerlink" title="制度目標"></a>制度目標</h3><p>VPC(Voluntary Product Certification, <strong>自願性產品驗證</strong>)，其目的是為了提升商品或服務的品質、環境、安全與衛生管理。因應鋰離子電池儲能系統可能發生熱失控、火災及爆炸等風險，經濟部標準檢驗局推動<strong>戶外電池儲能系統案場自願性產品驗證（VPC）制度</strong>。希望透過<strong>設計審查</strong>、<strong>案場驗證</strong>及<strong>定期試驗</strong>等機制，降低事故發生率並限制災害影響範圍，提升戶外儲能案場的安全性。</p>
-<h3 id="法源依據"><a href="#法源依據" class="headerlink" title="法源依據"></a>法源依據</h3><p>依據「商品檢驗法」第十四條第二項規定，<strong>標準檢驗局</strong>得推行相關商品或管理系統之驗證制度。「自願性產品驗證實施辦法」正是標準檢驗局實施VPC制度的主要法規。<br>而關於<strong>戶外儲能案場</strong>的VPC驗證制度，則依照以下子法辦理：</p>
+<h3 id="法源依據"><a href="#法源依據" class="headerlink" title="法源依據"></a>法源依據</h3><p>依據「商品檢驗法」第十四條第二項規定，<strong>標準檢驗局</strong>得推行相關商品或管理系統之驗證制度。<br><strong>「自願性產品驗證實施辦法」</strong>正是標準檢驗局實施VPC制度的主要法規。<br>而關於<strong>戶外儲能案場</strong>的VPC驗證制度，則依照以下子法辦理：</p>
 <ol>
 <li>「戶外電池儲能系統案場實施自願性產品驗證相關規定」<br>  (經濟部標準檢驗局於<strong>111年11月14日</strong>公告，並於當日生效)</li>
 <li>「戶外電池儲能系統案場驗證技術規範」</li>
 <li>「戶外電池儲能系統案場設計及驗證審查作業要點」</li>
 </ol>
-<h3 id="檢驗對象"><a href="#檢驗對象" class="headerlink" title="檢驗對象"></a>檢驗對象</h3><p>VPC驗證的對象是<strong>整座戶外儲能案場</strong>，包含以下像是：</p>
+<h3 id="檢驗對象"><a href="#檢驗對象" class="headerlink" title="檢驗對象"></a>檢驗對象</h3><p>VPC驗證的對象不僅是單一的儲能設備，而是整個<strong>設置戶外之併網式鋰系電池儲能系統</strong>，從<strong>通訊界面及併網變壓器以內</strong>的所有設備，包含以下像是：</p>
 <ul>
-<li>電芯&#x2F;單電池(Cell)</li>
+<li>電芯&#x2F;單電池(cell)</li>
+<li>電池模組(module)，由多個電芯串、並聯組成。</li>
+<li>電池櫃(battery rack&#x2F;pack&#x2F;cabinet)，由多個電池模組串、並聯組成。</li>
 <li>電池系統(Battery system)</li>
 <li>電池管理系統(BMS)</li>
-<li>貨櫃(Freight container)</li>
-<li>電池與PCS外箱(Enclosure)</li>
+<li>貨櫃(Container)</li>
+<li>設備外箱(Enclosure)</li>
 <li>電力轉換系統(PCS)</li>
 </ul>
+<h3 id="檢驗方法"><a href="#檢驗方法" class="headerlink" title="檢驗方法"></a>檢驗方法</h3><ul>
+<li><strong>Type Test</strong>(型式試驗)：<br>對代表生產之一或多個項目執行之符合性試驗。白話來說，提交<strong>第三方驗證標準</strong>(IEEE 1574等)供標檢局審核就是型式試驗。</li>
+<li><strong>FAT</strong>(factory acceptance test,工廠允收試驗)：<br>證明儲能系統、子系統、組件及額外提供之系統&#x2F;裝置符合規格之工廠作業活動。白話來說，在<strong>出廠</strong>時合乎產品要求的驗收。</li>
+<li><strong>SAT</strong>(site acceptance test,現場允收試驗)：<br>證明儲能系統可依據適用之系統規格及安裝說明書操作之現場作業活動。白話來說，在<strong>實地安裝</strong>後，現場進行的驗收。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 流程圖">Type Test -&gt; 工廠製造 -&gt; FAT -&gt; 工廠出貨 -&gt; 現地安裝 -&gt; SAT<br></code></pre></td></tr></table></figure>
+
 <h3 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h3><p>戶外儲能案場申請VPC證書，依照以下三個流程進行</p>
 <ol>
-<li><strong>設計審查</strong><br>由標檢局審查儲能案場的設計是否符合後續<strong>案場驗證</strong>的技術規範。</li>
+<li><strong>設計審查</strong><br>由標檢局審查儲能案場的設計是否符合後續<strong>案場驗證</strong>的技術規範。<br>如果是早於VPC制度公告前的<strong>過渡期案場</strong>，可免附設計審查建議書。</li>
 <li><strong>VPC申請及案場審查</strong><br>由標檢局審查建置完成後的儲能案場是否符合<strong>戶外電池儲能系統案場驗證技術規範</strong>。</li>
-<li><strong>VPC展延與換證制度</strong><br>VPC產品驗證的證書有效期限為<strong>兩年</strong>，並可展延一次。並在期滿後重新申請<strong>自願性產品驗證</strong>，並提供申請日前<strong>6個月</strong>內的驗證標準，其技術符合證明文件。</li>
+<li><strong>定期試驗</strong><br>符合要求取得<strong>自願性產品驗證</strong>證書之併網式儲能系統，應依據作業要點規定，<strong>每2年</strong>執行定期試驗。</li>
 </ol>
 
                 
