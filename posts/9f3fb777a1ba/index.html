@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析台灣調頻備轉dReg的月價金結算">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-13T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-13T09:24:51.695Z">
+<meta property="article:modified_time" content="2026-11-13T09:47:14.180Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力交易">
 <meta property="article:tag" content="電力系統">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          910 字
+          1k 字
         
       </span>
     
@@ -354,7 +354,7 @@
         
         
         
-          8 分鐘
+          9 分鐘
         
       </span>
     
@@ -416,8 +416,8 @@ $$
 </div>
 
 <h3 id="中止服務的容量費"><a href="#中止服務的容量費" class="headerlink" title="中止服務的容量費"></a>中止服務的容量費</h3><ul>
-<li>若合格交易者想要<strong>中止服務</strong>時，應於<strong>市場管理系統</strong>中提出，並且中止服務的容量跟時間皆可以在市場管理系統中預先設定。</li>
-<li>中止服務後的輔助服務，其價金以<strong>未中止的服務容量</strong>以及<strong>開始中止那小時</strong>的執行服務<strong>時間比例</strong>計算，並<strong>額外</strong>扣除中止容量所計算的價金的一半作為中止扣減。<br>如以下：<div>
+<li>若合格交易者想要<strong>中止服務</strong>時，應於<strong>市場管理系統</strong>中提出，並且中止服務的<strong>容量</strong>跟<strong>時間</strong>皆可以在市場管理系統中預先設定。</li>
+<li>中止服務後的價金以<strong>未中止的服務容量</strong>以及<strong>開始中止那小時</strong>的執行服務<strong>時間比例</strong>計算，並<strong>額外</strong>扣除<strong>中止容量</strong>所計算的價金的<strong>一半</strong>作為中止扣減。<br>如以下：<div>
 $$
 \begin{aligned}
 \textbf{中止服務最終容量費}_{d,h} &= \textbf{實際執行容量費}_{d,h} - \textbf{輔助服務中止扣減}_{d,h} \\
@@ -434,37 +434,49 @@ $$
 $$
 </div>
 
-<p><strong>效能價格</strong>是依照<strong>能力測試</strong>結果，得出<strong>調頻備轉效能級數</strong>，並以此對應效能價格。<br>如下表：</p>
+<p><strong>效能價格</strong>是依照<strong>能力測試</strong>結果，得出<strong>調頻備轉效能級數</strong>，並以此對應效能價格。</p>
+<h3 id="效能級數與價格"><a href="#效能級數與價格" class="headerlink" title="效能級數與價格"></a>效能級數與價格</h3><ul>
+<li><strong>發電機</strong>採用 T<sub>30</sub> 調頻單位效能測試分為<strong>五級</strong>。</li>
+<li><strong>非發電機</strong>的dReg效能級數以<strong>1級</strong>計算</li>
+</ul>
 <table>
 <thead>
 <tr>
 <th align="center">調頻備轉效能級數</th>
 <th align="center">價格</th>
+<th align="center">非發電機適用</th>
+<th align="center">發電機效能分級 ($T_{30}$ 區間)</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">無</td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
 <td align="center">350元</td>
+<td align="center">dReg</td>
+<td align="center">26-30</td>
 </tr>
 <tr>
-<td align="center">2</td>
+<td align="center"><strong>2</strong></td>
 <td align="center">275元</td>
+<td align="center">sReg</td>
+<td align="center">19-26</td>
 </tr>
 <tr>
-<td align="center">3</td>
+<td align="center"><strong>3</strong></td>
 <td align="center">200元</td>
+<td align="center">—</td>
+<td align="center">13-19</td>
 </tr>
 <tr>
-<td align="center">4</td>
+<td align="center"><strong>4</strong></td>
 <td align="center">125元</td>
+<td align="center">—</td>
+<td align="center">7-13</td>
 </tr>
 <tr>
-<td align="center">5</td>
+<td align="center"><strong>5</strong></td>
 <td align="center">50元</td>
+<td align="center">—</td>
+<td align="center">2-7</td>
 </tr>
 </tbody></table>
 
