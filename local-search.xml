@@ -8,7 +8,7 @@
     <link href="/posts/9f3fb777a1ba/"/>
     <url>/posts/9f3fb777a1ba/</url>
     
-    <content type="html"><![CDATA[<p>解析台灣調頻備轉dReg的月價金結算</p><span id="more"></span><h2 id="調頻備轉-dReg"><a href="#調頻備轉-dReg" class="headerlink" title="調頻備轉 dReg"></a>調頻備轉 dReg</h2><p>調頻備轉dReg的總公式如下：<br>$$<br>\text{調頻備轉容量月結算價金} &#x3D; \sum^{當月天數}<em>{d&#x3D;1} \sum^{24小時}</em>{h&#x3D;1} (\text{容量費}<em>{d,h} + \text{效能費}</em>{d,h}) \times \text{服務品質指標}_{d,h}<br>$$</p><h3 id="容量費"><a href="#容量費" class="headerlink" title="容量費"></a>容量費</h3><p>容量費是每小時調頻備轉容量的結清價格，乘以每小時的得標容量，並四捨五入到整數位。<br>$$<br>\text{容量費}<em>{d,h} &#x3D; \text{日前調頻備轉容量結清價格}</em>{d,h} \times \text{得標容量}_{d,h}<br>$$</p><p>若中途合格交易者想要終止服務時，</p>]]></content>
+    <content type="html"><![CDATA[<p>解析台灣調頻備轉dReg的月價金結算</p><span id="more"></span><h2 id="調頻備轉-dReg"><a href="#調頻備轉-dReg" class="headerlink" title="調頻備轉 dReg"></a>調頻備轉 dReg</h2><p>調頻備轉dReg的總公式如下：<br>$$<br>\text{調頻備轉容量月結算價金} &#x3D; \sum^{當月天數}<em>{d&#x3D;1} \sum^{24小時}</em>{h&#x3D;1} (\text{容量費}<em>{d,h} + \text{效能費}</em>{d,h}) \times \text{服務品質指標}_{d,h}<br>$$</p><h3 id="容量費"><a href="#容量費" class="headerlink" title="容量費"></a>容量費</h3><p>容量費是每小時調頻備轉容量的結清價格，乘以每小時的得標容量，並四捨五入到整數位。<br>$$<br>\text{容量費}<em>{d,h} &#x3D; \text{日前調頻備轉容量結清價格}</em>{d,h} \times \text{得標容量}_{d,h}<br>$$</p><p>若中途合格交易者想要終止服務時，應於市場管理系統中提出</p>]]></content>
     
     
     <categories>
