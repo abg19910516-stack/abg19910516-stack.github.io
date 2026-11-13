@@ -8,7 +8,7 @@
     <link href="/posts/9f3fb777a1ba/"/>
     <url>/posts/9f3fb777a1ba/</url>
     
-    <content type="html"><![CDATA[<p>解析台灣調頻備轉dReg的月價金結算</p><span id="more"></span><h2 id="戶外儲能案場VPC制度"><a href="#戶外儲能案場VPC制度" class="headerlink" title="戶外儲能案場VPC制度"></a>戶外儲能案場VPC制度</h2>]]></content>
+    <content type="html"><![CDATA[<p>解析台灣調頻備轉dReg的月價金結算</p><span id="more"></span><h2 id="調頻備轉-dReg"><a href="#調頻備轉-dReg" class="headerlink" title="調頻備轉 dReg"></a>調頻備轉 dReg</h2><p>調頻備轉dReg的總公式如下：<br>$$<br>\text{調頻備轉容量月結算價金} &#x3D; \sum^{當月天數}<em>{d&#x3D;1} \sum^{24小時}</em>{h&#x3D;1} (\text{容量費}<em>{d,h} + \text{效能費}</em>{d,h}) \times \text{服務品質指標}_{d,h}<br>$$</p><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
     
     
     <categories>
