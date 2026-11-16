@@ -19,16 +19,16 @@
   <meta name="author" content="PowerMan">
   <meta name="keywords" content="電力工程,PowerMan">
   
-    <meta name="description" content="解析台灣調頻備轉dReg的月價金結算">
+    <meta name="description" content="解析台灣調頻備轉dReg的月結算制度與公式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="調頻備轉dReg結算">
+<meta property="og:title" content="調頻備轉dReg月結算">
 <meta property="og:url" content="https://abg19910516-stack.github.io/posts/9f3fb777a1ba/index.html">
 <meta property="og:site_name" content="PowerMan 電力工程筆記">
-<meta property="og:description" content="解析台灣調頻備轉dReg的月價金結算">
+<meta property="og:description" content="解析台灣調頻備轉dReg的月結算制度與公式">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://abg19910516-stack.github.io/images/%E8%AA%BF%E9%A0%BB%E5%82%99%E8%BD%89dReg%E5%83%B9%E9%87%91%E7%B5%90%E7%AE%97%E6%96%B9%E6%B3%95-dReg%E9%96%83%E9%9B%BB%E5%9C%96.png">
 <meta property="article:published_time" content="2026-11-13T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-16T05:15:19.346Z">
+<meta property="article:modified_time" content="2026-11-16T05:47:38.777Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力交易">
 <meta property="article:tag" content="電力系統">
@@ -37,7 +37,7 @@
   
   
   
-  <title>調頻備轉dReg結算 - PowerMan 電力工程筆記</title>
+  <title>調頻備轉dReg月結算 - PowerMan 電力工程筆記</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -322,7 +322,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="調頻備轉dReg結算"></span>
+            <span id="subtitle" data-typed-text="調頻備轉dReg月結算"></span>
           
         </div>
 
@@ -345,7 +345,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          1.9k 字
         
       </span>
     
@@ -356,7 +356,7 @@
         
         
         
-          14 分鐘
+          16 分鐘
         
       </span>
     
@@ -395,22 +395,38 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">調頻備轉dReg結算</h1>
+            <h1 id="seo-header">調頻備轉dReg月結算</h1>
             
             
               <div class="markdown-body">
                 
-                <p>解析台灣調頻備轉dReg的月價金結算</p>
+                <p>解析台灣調頻備轉dReg的月結算制度與公式</p>
 <span id="more"></span>
 
-<h2 id="調頻備轉-dReg"><a href="#調頻備轉-dReg" class="headerlink" title="調頻備轉 dReg"></a>調頻備轉 dReg</h2><p>調頻備轉dReg的總公式如下：</p>
+<h2 id="調頻備轉-dReg"><a href="#調頻備轉-dReg" class="headerlink" title="調頻備轉 dReg"></a>調頻備轉 dReg</h2><p>調頻備轉dReg的月結算金額主要可以分為兩大類：</p>
+<ol>
+<li><p><strong>調頻備轉容量月結算價金</strong><br>這是根據<strong>各小時的投標結果</strong>所得出的結算價金。<br>調頻備轉容量月結算價金的總公式如下：</p>
 <div>
 $$
 \textbf{調頻備轉容量月結算價金} = \sum^{\textbf{當月天數}}_{d=1} \sum^{\textbf{24小時}}_{h=1} (\textbf{容量費}_{d,h} + \textbf{效能費}_{d,h}) \times \textbf{服務品質指標}_{d,h}
 $$
 </div>
+</li>
+<li><p><strong>電能損失費</strong><br>這是因為併網型儲能系統無購售電力的事實(僅提供電池充放電)，故<strong>每月結算</strong>需要<strong>扣除電能損失費</strong>。<br>電能損失費的總公式如下：</p>
+<div>
+$$
+\textbf{電能損失費} = \textbf{基本費} + \textbf{超額費}
+$$
+</div></li>
+</ol>
+<p>以上兩者相加即為<strong>調頻備轉dReg每月結算金額</strong>：</p>
+<div>
+$$
+\textbf{每月結算金額} = \textbf{調頻備轉容量月結算價金} + \textbf{電能損失費}
+$$
+</div>
 
-<h2 id="容量費"><a href="#容量費" class="headerlink" title="容量費"></a>容量費</h2><p>容量費是每小時調頻備轉容量的結清價格，乘以每小時的得標容量，並四捨五入到整數位。<br>如以下：</p>
+<h2 id="調頻備轉容量月結算價金"><a href="#調頻備轉容量月結算價金" class="headerlink" title="調頻備轉容量月結算價金"></a>調頻備轉容量月結算價金</h2><h3 id="容量費"><a href="#容量費" class="headerlink" title="容量費"></a>容量費</h3><p>容量費是每小時調頻備轉容量的結清價格，乘以每小時的得標容量，並四捨五入到整數位。<br>如以下：</p>
 <div>
 $$
 \textbf{容量費}_{d,h} = \textbf{日前調頻備轉容量結清價格}_{d,h} \times \textbf{得標容量}_{d,h}
@@ -429,7 +445,7 @@ $$
 $$
 </div></li>
 </ul>
-<h2 id="效能費"><a href="#效能費" class="headerlink" title="效能費"></a>效能費</h2><p>效能費是效能價格乘以每小時的得標容量，並四捨五入到整數位。</p>
+<h3 id="效能費"><a href="#效能費" class="headerlink" title="效能費"></a>效能費</h3><p>效能費是效能價格乘以每小時的得標容量，並四捨五入到整數位。</p>
 <div>
 $$
 \textbf{效能費}_{d,h} = \textbf{效能價格} \times \textbf{得標容量}_{d,h}
@@ -481,7 +497,7 @@ $$
 <td align="center">2-7</td>
 </tr>
 </tbody></table>
-<h2 id="服務品質指標"><a href="#服務品質指標" class="headerlink" title="服務品質指標"></a>服務品質指標</h2><ul>
+<h3 id="服務品質指標"><a href="#服務品質指標" class="headerlink" title="服務品質指標"></a>服務品質指標</h3><ul>
 <li><strong>發電機組</strong>服務品質指標視為<strong>1</strong>，但應定期配合進行能力測試。</li>
 <li><strong>非發電機組</strong>服務品質指標依據<strong>每小時執行實績</strong>，算出相對應的服務品質指標。</li>
 </ul>
@@ -573,7 +589,7 @@ $$
 <td align="center">-1</td>
 </tr>
 </tbody></table>
-
+<h2 id="電能損失費"><a href="#電能損失費" class="headerlink" title="電能損失費"></a>電能損失費</h2><h3 id="基本費"><a href="#基本費" class="headerlink" title="基本費"></a>基本費</h3><h3 id="超額費"><a href="#超額費" class="headerlink" title="超額費"></a>超額費</h3>
                 
               </div>
             
@@ -627,7 +643,7 @@ $$
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>調頻備轉dReg結算</div>
+      <div>調頻備轉dReg月結算</div>
       <div>https://abg19910516-stack.github.io/posts/9f3fb777a1ba/</div>
     </div>
     <div class="license-meta">
