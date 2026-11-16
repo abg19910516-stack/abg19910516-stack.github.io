@@ -8,7 +8,7 @@
     <link href="/posts/b45e9ce7c02a/"/>
     <url>/posts/b45e9ce7c02a/</url>
     
-    <content type="html"><![CDATA[<p>解析台灣電力交易平台T30調頻單位效能測試，並做成此筆記。</p><span id="more"></span><h2 id="施工中"><a href="#施工中" class="headerlink" title="施工中"></a>施工中</h2>]]></content>
+    <content type="html"><![CDATA[<p>解析台灣電力交易平台T30調頻單位效能測試，並做成此筆記。</p><span id="more"></span><h2 id="T30調頻單位效能測試"><a href="#T30調頻單位效能測試" class="headerlink" title="T30調頻單位效能測試"></a>T<sub>30</sub>調頻單位效能測試</h2><p>電力交易平台採用T<sub>30</sub>調頻單位效能測試，作為<strong>發電機組</strong>調頻備轉效能級數之判定方法。<br>此方法綜合考量了發電機組的初始反應時間、機組升載率及調頻容量效能表現。</p><h3 id="計算方法"><a href="#計算方法" class="headerlink" title="計算方法"></a>計算方法</h3>]]></content>
     
     
     <categories>
