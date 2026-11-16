@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://abg19910516-stack.github.io/images/T30%E8%AA%BF%E9%A0%BB%E5%96%AE%E4%BD%8D%E6%95%88%E8%83%BD%E6%B8%AC%E8%A9%A6-T30%E6%B8%AC%E8%A9%A6%E7%A4%BA%E6%84%8F%E5%9C%96.png">
 <meta property="article:published_time" content="2026-11-16T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-16T09:24:30.794Z">
+<meta property="article:modified_time" content="2026-11-16T09:28:31.655Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力交易">
 <meta property="article:tag" content="電力系統">
@@ -345,7 +345,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          412 字
+          430 字
         
       </span>
     
@@ -413,17 +413,16 @@
 </li>
 <li><p>保持直到從T<sub>0</sub>時間<strong>開始30秒</strong>。</p>
 </li>
-<li><p>計算測試期間的<strong>總出力能量</strong>(也就是下圖的梯形面積)。</p>
+<li><p>計算測試期間的<strong>總出力能量</strong>(也就是下圖的梯形面積)。<br>$$ \text{總出力能量} &#x3D; \frac{((30 - t_{1} - t_{2}) + (30 - t_{1})) \times ((x &#x2F; 60) \times t_{2})}{2} $$</p>
+</li>
+<li><p><strong>總出力能量</strong>除以可調頻容量<strong>C</strong>，得出的數值就是發電機效能分級T<sub>30</sub>。</p>
 <div>
 $$
-\textbf{總出力能量} = ((30 - \textbf{t}_{1} - \textbf{t}_{2}) + ( 30 - \textbf{t}_{1})) \times ((\textbf{x} / 60) \times \textbf{t}_{2}) / 2
+\textbf{發電機效能分級} = \textbf{總出力能量} / \textbf{C}
 $$
-</div>
-</li>
-<li><p><strong>總出力能量</strong>除以可調頻容量，得出的數值就是發電機效能分級T<sub>30</sub>。</p>
-</li>
+</div></li>
 </ol>
-<p>測試方法如下圖所示：<br><img src="/images/T30%E8%AA%BF%E9%A0%BB%E5%96%AE%E4%BD%8D%E6%95%88%E8%83%BD%E6%B8%AC%E8%A9%A6-T30%E6%B8%AC%E8%A9%A6%E7%A4%BA%E6%84%8F%E5%9C%96.png" srcset="/img/loading.gif" lazyload alt="T30調頻單位效能測試圖" title="T&lt;sub&gt;30&lt;/sub&gt;調頻單位效能測試圖"></p>
+<p>測試方法如下圖所示：<br><img src="/images/T30%E8%AA%BF%E9%A0%BB%E5%96%AE%E4%BD%8D%E6%95%88%E8%83%BD%E6%B8%AC%E8%A9%A6-T30%E6%B8%AC%E8%A9%A6%E7%A4%BA%E6%84%8F%E5%9C%96.png" srcset="/img/loading.gif" lazyload alt="T&lt;sub&gt;30&lt;/sub&gt;調頻單位效能測試圖" title="T&lt;sub&gt;30&lt;/sub&gt;調頻單位效能測試圖"></p>
 <p>發電機效能分級T<sub>30</sub>具體的物理意義，我把他理解為<strong>30秒內</strong>的等效<strong>滿載出力秒數</strong>。</p>
 
                 
