@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-17T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-17T09:11:24.871Z">
+<meta property="article:modified_time" content="2026-11-17T09:30:04.224Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          2k 字
         
       </span>
     
@@ -354,7 +354,7 @@
         
         
         
-          14 分鐘
+          17 分鐘
         
       </span>
     
@@ -433,23 +433,16 @@ $$
 \begin{aligned}
 \textbf{CPS1} &= ( \textbf{2} -  \frac{CF}{ \varepsilon^{2}_{1}} ) \times \textbf{100} \\
 \textbf{CF} &= \textbf{AVG}\left(\textbf{ACE} \times \Delta \text{freq}\right)
-\end{aligned}
-$$
-</div>
-
-<p>其中：</p>
-<div>
-$$
-\begin{aligned}
 \Delta \text{freq} &= \textbf{系統頻率誤差}\\
 \varepsilon_{1} &= \textbf{NERC依不同互聯系統所訂定的頻率績效常數}
 \end{aligned}
 $$
 </div>
 
+<p>其中：<br>$$\text{CF}$$<br>反映控制區的<strong>ACE與系統頻率偏差之間的關係</strong>。<br>當系統頻率下降時，若控制區增加發電支援系統，則ACE與頻率偏差將呈現負相關，此時CF將趨向負值；反之，若控制區的控制行為惡化頻率偏差，則CF將趨向正值。</p>
+<p>$$\varepsilon_{1}$$<br>為NERC所定義之頻率績效常數(Frequency Performance Constant)，其用途為建立互聯系統可接受的頻率品質基準，並作為CPS1評分的比較依據。<br>在NERC的標準中訂為以下公式，具體概念為「<strong>正常運轉狀況下，互聯系統天然AEC的擾動</strong>」<br>$$<br>\begin{aligned}<br>\varepsilon_{1} &#x3D; \textbf{B}<em>{s} \sigma</em>{f} \<br>\textbf{B}<em>{s} &amp;&#x3D; \textbf{Interconnection Frequency Bias} \<br>\sigma</em>{f} &amp;&#x3D; \textbf{互聯系統頻率偏差標準差}<br>\end{aligned}<br>$$</p>
 <h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><p>CPS1認為良好的控制區應在系統頻率<strong>降低</strong>時<strong>增加發電</strong>，在系統頻率<strong>升高</strong>時<strong>減少發電</strong>。</p>
-<p>例如：<br>當系統頻率低於額定值時：<br>$$\Delta \textbf{freq} &lt; 0 $$</p>
-<p>若控制區增加發電支援系統：<br>$$\textbf{ACE} &gt; 0 $$<br>則：<br>$$\textbf{ACE} \times \Delta \textbf{freq} &lt; 0 $$<br>代表該控制區正在協助恢復系統頻率。</p>
+<p>例如：<br>當系統頻率低於額定值時：<br>$$\Delta \textbf{freq} &lt; 0 $$<br>若控制區增加發電支援系統：<br>$$\textbf{ACE} &gt; 0 $$<br>則：<br>$$\textbf{ACE} \times \Delta \textbf{freq} &lt; 0 $$<br>代表該控制區正在協助恢復系統頻率。</p>
 <p>反之，若頻率下降時控制區反而減少發電：<br>$$\textbf{ACE} \times \Delta \textbf{freq} &gt; 0 $$<br>則表示控制區正在惡化系統頻率。</p>
 <p>因此，CPS1本質上衡量的是：<br><strong>控制區的控制行為是否對整體互聯系統頻率產生正面貢獻。</strong><br>當CPS1等於100時代表符合最低要求，大於100表示控制績效優於要求，小於100則表示未達標準。</p>
 
