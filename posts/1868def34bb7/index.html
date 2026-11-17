@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-17T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-17T08:34:02.972Z">
+<meta property="article:modified_time" content="2026-11-17T08:42:07.299Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.2k 字
         
       </span>
     
@@ -401,7 +401,7 @@
                 <p>解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。</p>
 <span id="more"></span>
 
-<h2 id="歷史"><a href="#歷史" class="headerlink" title="歷史"></a>歷史</h2><p>在<strong>CPS1</strong>出現以前，北美電力系統出現了搭便車的情況。</p>
+<h2 id="歷史"><a href="#歷史" class="headerlink" title="歷史"></a>歷史</h2><p>在<strong>CPS1</strong>出現以前，北美電力系統出現了搭便車的情況，也就是<strong>大型互聯系統的區域間供需平衡責任</strong>分配不均。</p>
 <ol>
 <li>當A電力公司出現缺電，頻率下降。</li>
 <li>但A公司不急著補足不平衡，而是放手依靠對外聯絡線。</li>
@@ -422,13 +422,13 @@ $$
 </li>
 </ol>
 <h3 id="A1、A2控制標準的三大缺陷"><a href="#A1、A2控制標準的三大缺陷" class="headerlink" title="A1、A2控制標準的三大缺陷"></a>A1、A2控制標準的三大缺陷</h3><ol>
-<li>缺少學術依據<br>10分鐘、上限L<sub>10</sub>出自工程上的經驗，沒有學術依據。</li>
-<li>無論ACE的方向為何，不同ACE的大小會被一視同仁。<br>A1標準只看ACE過零點，500MW的誤差與2MW的誤差都要在十分鐘過零點，導致頻繁加減載。</li>
-<li>與整個互聯系統的頻率無關<br>當系統頻率下降時，某區域的ACE為正，輸出電力支援電網。但卻會受A1、A2影響，需減少或停止支撐電網，讓全系統頻率更難維持。</li>
+<li><strong>缺少學術依據</strong><br>10分鐘、上限L<sub>10</sub>出自工程上的經驗，沒有學術依據。</li>
+<li><strong>無論ACE的方向為何，不同ACE的大小會被一視同仁。</strong><br>A1標準只看ACE過零點，500MW的誤差與2MW的誤差都要在十分鐘過零點，導致<strong>頻繁加減載</strong>。</li>
+<li><strong>與整個互聯系統的頻率無關</strong><br>當系統頻率下降時，某區域的ACE為正，輸出電力支援電網。但卻會受A1、A2影響，需減少或停止支撐電網，讓<strong>全系統頻率</strong>更難維持。</li>
 </ol>
-<p>因此在1997年，北美電力可靠度公司(NERC)公布了CPS1指標。</p>
-<h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2><p><strong>CPS1</strong>是國際各大調度中心所廣泛接受的電力系統頻率控制指標。<br>其本質目的是為了<strong>解決大型互聯系統的區域間供需平衡責任</strong>。</p>
-<h2 id="數學定義"><a href="#數學定義" class="headerlink" title="數學定義"></a>數學定義</h2><div>
+<p>因此在1997年，北美電力可靠度公司(NERC)公布了<strong>CPS1指標</strong>。</p>
+<h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2><p><strong>CPS1</strong>改善了A1和A2的缺點，不再強求ACE固定時間要過零點，全系統頻率偏低時也鼓勵ACE為正支撐電網，並引入了<strong>統計學</strong>的概念評估區域對電網頻率的長期貢獻。</p>
+<h3 id="數學定義"><a href="#數學定義" class="headerlink" title="數學定義"></a>數學定義</h3><div>
 $$
 \textbf{CPS1} = ( \textbf{2} -  \frac{CF}{ \varepsilon^{2}_{1}} ) \times \textbf{100}
 $$
