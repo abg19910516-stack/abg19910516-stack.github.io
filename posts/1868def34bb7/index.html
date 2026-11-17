@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-17T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-17T08:52:30.064Z">
+<meta property="article:modified_time" content="2026-11-17T08:55:29.845Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.3k 字
         
       </span>
     
@@ -430,25 +430,25 @@ $$
 <h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2><p><strong>CPS1</strong>改善了A1和A2的缺點，不再強求ACE固定時間要過零點，全系統頻率偏低時也鼓勵ACE為正支撐電網，並引入了<strong>統計學</strong>的概念評估區域對電網頻率的長期貢獻。</p>
 <h3 id="數學定義"><a href="#數學定義" class="headerlink" title="數學定義"></a>數學定義</h3><div>
 $$
-\textbf{CPS1} = ( \textbf{2} -  \frac{CF}{ \varepsilon^{2}_{1}} ) \times \textbf{100}
+\begin{aligned}
+\textbf{CPS1} &= ( \textbf{2} -  \frac{CF}{ \varepsilon^{2}_{1}} ) \times \textbf{100} \\
+\textbf{CF} &= \textbf{AVG}\left(\textbf{ACE} \times \Delta \text{freq}\right)
+\end{aligned}
 $$
 </div>
 
 <p>其中：</p>
 <div>
 $$
-\textbf{CF} = \textbf{AVG}\left(\textbf{ACE} \times \Delta \text{freq}\right)
+\begin{aligned}
+\Delta \text{freq} &= \textbf{系統頻率誤差}\\
+\varepsilon_{1} &= \textbf{NERC依不同互聯系統所訂定的頻率績效常數}
+\end{aligned}
 $$
 </div>
 
-<div>
-$$
-\Delta \text{freq} ： \textbf{系統頻率誤差}
-$$
-</div>
-CPS1等於100時為符合要求，大於100為優於要求，小於100為未達標。
-然而長達月度的取平均操作，也代表著CPS1注重的是長期的頻率品質。
-短期的頻率控制指標要依靠CPS2這一項。
+<p>CPS1等於100時為符合要求，大於100為優於要求，小於100為未達標。<br>然而長達月度的取平均操作，也代表著CPS1注重的是長期的頻率品質。<br>短期的頻率控制指標要依靠CPS2這一項。</p>
+
                 
               </div>
             
