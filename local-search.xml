@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>CPS1 頻率控制效能標準1</title>
+    <link href="/posts/1868def34bb7/"/>
+    <url>/posts/1868def34bb7/</url>
+    
+    <content type="html"><![CDATA[<p>解析CPS1 頻率控制效能標準1，以及與台灣相關的議題。</p><span id="more"></span><h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>電力工程</category>
+      
+      <category>電力系統</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>電力系統</tag>
+      
+      <tag>電力工程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>T30調頻單位效能測試</title>
     <link href="/posts/b45e9ce7c02a/"/>
     <url>/posts/b45e9ce7c02a/</url>
@@ -22,9 +51,11 @@
     
     <tags>
       
-      <tag>電力交易</tag>
-      
       <tag>電力系統</tag>
+      
+      <tag>電力工程</tag>
+      
+      <tag>電力交易</tag>
       
     </tags>
     
@@ -51,9 +82,9 @@
     
     <tags>
       
-      <tag>電力交易</tag>
+      <tag>電力工程</tag>
       
-      <tag>電力系統</tag>
+      <tag>電力交易</tag>
       
     </tags>
     
@@ -82,6 +113,8 @@
       
       <tag>電力系統</tag>
       
+      <tag>電力工程</tag>
+      
       <tag>儲能系統</tag>
       
     </tags>
@@ -109,9 +142,11 @@
     
     <tags>
       
-      <tag>電力交易</tag>
-      
       <tag>電力系統</tag>
+      
+      <tag>電力工程</tag>
+      
+      <tag>電力交易</tag>
       
       <tag>儲能系統</tag>
       
@@ -140,9 +175,11 @@
     
     <tags>
       
-      <tag>電力交易</tag>
-      
       <tag>電力系統</tag>
+      
+      <tag>電力工程</tag>
+      
+      <tag>電力交易</tag>
       
     </tags>
     
@@ -155,7 +192,7 @@
     <link href="/posts/94e2ac2c7340/"/>
     <url>/posts/94e2ac2c7340/</url>
     
-    <content type="html"><![CDATA[<p>ECVN(Energy Contract Volume Notification, 能源合約電量通知)是英國電力市場中重要的關鍵配套，其核心目的是為了解決電力自由交易下的資訊不對稱情況(電網無法得知發購電雙方的私下合約，造成電網供需平衡的困擾無法有效責任歸屬)。ECVN透過合約雙方提交電量帳本的方式，發購電雙方僅需透漏某時段內預計傳輸與接收的電量，即可將雙方維持電網供需平衡的責任，進行合理歸屬。</p><span id="more"></span><h2 id="核心目標"><a href="#核心目標" class="headerlink" title="核心目標"></a>核心目標</h2><p>在英國，發電商與售電商、用戶可以自由地簽訂各項合約，遠期、日前與當日都可以，並且這些都無須上報，屬於雙方的商業機密，是不同於公開電力市場的售電途徑。這時電網不知道市場的參與者私下買賣了多少電，當雙方出現與合約有差的用電與發電需求時，會造成整體電網需要吸收電力不平衡的成本，而不是未正確履約的發電商與售電商、用戶。<br>此時ECVN就扮演了公正的裁判，私下簽訂契約的買賣雙方有責任進行ECVN通報，揭露每個單位時段的預計傳輸發購電量度數，解決供需不平衡的責任歸屬。<br>舉例來說：當發電端今天通報預計傳輸10MWh的電能給購電方，結果實際上發電端只發了5MWh，這時發電端就要為這短缺的5MWh付出不平衡電費。購電方依照ECVN通報使用10MWh，則不會有不平衡電費的懲罰。</p><h2 id="各項角色"><a href="#各項角色" class="headerlink" title="各項角色"></a>各項角色</h2><ul><li>Relevant Contract Parties(相關合約方)：在ECVN中，實際參與ECVN交易的買賣雙方。<ul><li>Single Relevant Contract Party：同時為ECVN交易的買賣雙方，像是同時擁有發電、售電業物的電力巨頭，進行集團內的合約電量轉移。</li></ul></li><li>Energy Contract Volume Notification Agent (ECVNA, ECVN代理)：在ECVN通報中，負責提交ECVN相關操作的代理者。在規定中，買賣雙方須共同指派代理人，亦即同時代理買賣雙方，無法切割身分，以避免出現申報衝突。</li><li>Energy Contract Volume Aggregation Agent (ECVAA, ECVN彙總代理)：在ECVN通報中，負責收件、審核以及”加總”等行政流程的官方代理人，所有ECVNA皆須透過ECVAA執行ECVN相關流程。</li><li>Energy (From)&#x2F;(To) Account(電力帳戶)：在ECVN中，紀錄合約電量轉出轉入的帳戶，用戶可以轉出或轉入，電量流向是彈性且雙向的。<ul><li>Energy (From) Account：指定扣除合約電量的賣方帳戶(發電)。</li><li>Energy (To) Account：指定接收合約電量的買方帳戶(用電)。</li></ul></li><li>Settlement Administration Agent (SAA, 結算管理代理人)：電費結算的官方代理。</li></ul><h2 id="ECVN的運作流程"><a href="#ECVN的運作流程" class="headerlink" title="ECVN的運作流程"></a>ECVN的運作流程</h2><ol><li><p>合約授權<br>在開始正式提交ECVN通知之前，”相關合約方”需要共同授權一個”ECVN代理”，授權書中需交代”ECVN代理”、”相關合約方”的”電力帳戶”、授權生效日。授權書中亦可交代”ECVN代理”的權限，像是只能”追加合約通知”或是只能”代替合約通知”。授權經過確認後，會由”ECVN彙總代理”發出通知”相關合約方”與”ECVN代理”三方。</p></li><li><p>提交ECVN通知<br>ECVN通知提交都需要交由”ECVN代理”，且一定是同時代理買賣雙方。提交的ECVN通知共有三種型式：</p><ol><li>Initial ECVN (初始合約通知)：針對特定電量排程的首次提交。</li><li>Additional ECVN (追加合約通知)：針對有過初始合約通知的排程，新增電量。</li><li>Replacement ECVN (代替合約通知)：覆蓋舊有合約通知的更新。<br>ECVN通知都需要再截止時間以前傳送才會在結算中生效。</li></ol></li><li><p>驗證與信用檢查<br>“ECVN彙總代理”收到提交上來的ECVN通知後，會進行格式與資格的檢查，確認轉移電量數值的正確性、代理人有無授權等。也會檢查”相關合約方”的信用違約風險，降低高風險”相關合約方”擴大金融影響範圍。</p></li><li><p>電量彙總與傳送結算<br>“ECVN彙總代理”會在結算時段，彙總所有的ECVN通知轉移量，計算出帳戶的Account Bilateral Contract Volume (QABC, 帳戶雙邊合約電量)，並交由”結算管理代理人”執行後續的結算工作(加入實體電表比對)。</p></li></ol><h2 id="一些注意事項"><a href="#一些注意事項" class="headerlink" title="一些注意事項"></a>一些注意事項</h2><ul><li>ECVN是屬於通知性質，並不是合約本身，是通知電力結算機關單位時段內的預計發購電能量。</li><li>ECVN僅作為結算使用，實際調度要參考FPN機制。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>ECVN(Energy Contract Volume Notification, 能源合約電量通知)是英國電力市場中重要的關鍵配套，其核心目的是為了解決電力自由交易下的資訊不對稱情況(電網無法得知發購電雙方的私下合約，造成電網供需平衡的困擾無法有效責任歸屬)。ECVN透過合約雙方提交電量帳本的方式，發購電雙方僅需透漏某時段內預計傳輸與接收的電量，即可將雙方維持電網供需平衡的責任，進行合理歸屬。</p><span id="more"></span><h2 id="核心目標"><a href="#核心目標" class="headerlink" title="核心目標"></a>核心目標</h2><p>在英國，發電商與售電商、用戶可以自由地簽訂各項合約，遠期、日前與當日都可以，並且這些都無須上報，屬於雙方的商業機密，是不同於公開電力市場的售電途徑。這時電網不知道市場的參與者私下買賣了多少電，當雙方出現與合約有差的用電與發電需求時，會造成整體電網需要吸收電力不平衡的成本，而不是未正確履約的發電商與售電商、用戶。<br>此時ECVN就扮演了公正的裁判，私下簽訂契約的買賣雙方有責任進行ECVN通報，揭露每個單位時段的預計傳輸發購電量度數，解決供需不平衡的責任歸屬。<br>舉例來說：當發電端今天通報預計傳輸10MWh的電能給購電方，結果實際上發電端只發了5MWh，這時發電端就要為這短缺的5MWh付出不平衡電費。購電方依照ECVN通報使用10MWh，則不會有不平衡電費的懲罰。</p><h2 id="各項角色"><a href="#各項角色" class="headerlink" title="各項角色"></a>各項角色</h2><ul><li>Relevant Contract Parties(相關合約方)：在ECVN中，實際參與ECVN通報的買賣雙方。<ul><li>Single Relevant Contract Party：同時擁有ECVN通報的買賣電力帳戶，像是同時擁有發電、售電業物的電力巨頭，進行集團內的合約電量轉移。</li></ul></li><li>Energy Contract Volume Notification Agent (ECVNA, ECVN代理)：在ECVN通報中，負責提交ECVN相關操作的代理者。在規定中，買賣雙方須共同指派代理人，亦即同時代理買賣雙方，無法切割身分，以避免出現申報衝突。</li><li>Energy Contract Volume Aggregation Agent (ECVAA, ECVN彙總代理)：在ECVN通報中，負責收件、審核以及”加總”等行政流程的官方代理人，所有ECVNA皆須透過ECVAA執行ECVN相關流程。</li><li>Energy (From)&#x2F;(To) Account(電力帳戶)：在ECVN中，紀錄合約電量轉出轉入的帳戶，用戶可以轉出或轉入，電量流向是彈性且雙向的。<ul><li>Energy (From) Account：指定扣除合約電量的賣方帳戶(發電)。</li><li>Energy (To) Account：指定接收合約電量的買方帳戶(用電)。</li></ul></li><li>Settlement Administration Agent (SAA, 結算管理代理人)：電費結算的官方代理。</li></ul><h2 id="ECVN的運作流程"><a href="#ECVN的運作流程" class="headerlink" title="ECVN的運作流程"></a>ECVN的運作流程</h2><ol><li><p>合約授權<br>在開始正式提交ECVN通知之前，”相關合約方”需要共同授權一個”ECVN代理”，授權書中需交代”ECVN代理”、”相關合約方”的”電力帳戶”、授權生效日。授權書中亦可交代”ECVN代理”的權限，像是只能”追加合約通知”或是只能”代替合約通知”。授權經過確認後，會由”ECVN彙總代理”發出通知”相關合約方”與”ECVN代理”三方。</p></li><li><p>提交ECVN通知<br>ECVN通知提交都需要交由”ECVN代理”，且一定是同時代理買賣雙方。提交的ECVN通知共有三種型式：</p><ol><li>Initial ECVN (初始合約通知)：針對特定電量排程的首次提交。</li><li>Additional ECVN (追加合約通知)：針對有過初始合約通知的排程，新增電量。</li><li>Replacement ECVN (代替合約通知)：覆蓋舊有合約通知的更新。<br>ECVN通知都需要再截止時間以前傳送才會在結算中生效。</li></ol></li><li><p>驗證與信用檢查<br>“ECVN彙總代理”收到提交上來的ECVN通知後，會進行格式與資格的檢查，確認轉移電量數值的正確性、代理人有無授權等。也會檢查”相關合約方”的信用違約風險，降低高風險”相關合約方”擴大金融影響範圍。</p></li><li><p>電量彙總與傳送結算<br>“ECVN彙總代理”會在結算時段，彙總所有的ECVN通知轉移量，計算出帳戶的Account Bilateral Contract Volume (QABC, 帳戶雙邊合約電量)，並交由”結算管理代理人”執行後續的結算工作(加入實體電表比對)。</p></li></ol><h2 id="一些注意事項"><a href="#一些注意事項" class="headerlink" title="一些注意事項"></a>一些注意事項</h2><ul><li>ECVN是屬於通知性質，並不是合約本身，是通知電力結算機關單位時段內的預計發購電能量。</li><li>ECVN僅作為結算使用，實際調度要參考FPN機制。</li></ul>]]></content>
     
     
     <categories>
@@ -169,9 +206,11 @@
     
     <tags>
       
-      <tag>電力交易</tag>
-      
       <tag>電力系統</tag>
+      
+      <tag>電力工程</tag>
+      
+      <tag>電力交易</tag>
       
     </tags>
     
@@ -198,9 +237,11 @@
     
     <tags>
       
-      <tag>電力交易</tag>
-      
       <tag>電力系統</tag>
+      
+      <tag>電力工程</tag>
+      
+      <tag>電力交易</tag>
       
     </tags>
     
