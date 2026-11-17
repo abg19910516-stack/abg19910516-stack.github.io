@@ -8,7 +8,7 @@
     <link href="/posts/1868def34bb7/"/>
     <url>/posts/1868def34bb7/</url>
     
-    <content type="html"><![CDATA[<p>解析CPS1 頻率控制效能標準1，以及與台灣相關的議題。</p><span id="more"></span><h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2>]]></content>
+    <content type="html"><![CDATA[<p>解析CPS1 頻率控制效能標準1，以及與台灣相關的議題。</p><span id="more"></span><h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2><p><strong>CPS1</strong>是國際各大調度中心所廣泛接受的電力系統頻率控制指標。<br>其本質目的是為了<strong>解決大型互聯系統的區域間供需平衡責任</strong>。</p><h2 id="CPS1歷史"><a href="#CPS1歷史" class="headerlink" title="CPS1歷史"></a>CPS1歷史</h2><p>在CPS1出現以前，北美電力系統出現了搭便車的情況，也就是當A電力公司出現缺電，頻率下降，但他不急著補足不平衡，而是放手依靠對外聯絡線，把成本轉嫁給其他公司。<br>為了解決這個問題，因此制定了最開始的控制標準<strong>A1</strong>和<strong>A2</strong>。</p><h3 id="A1、A2控制標準"><a href="#A1、A2控制標準" class="headerlink" title="A1、A2控制標準"></a>A1、A2控制標準</h3><ol><li><p><strong>A1</strong><br>規定控制區域的ACE每10分鐘需要穿過零點一次，不能讓區域誤差維持在同一個方向(持續多發或少發)</p></li><li><p><strong>A2</strong><br>規定任何區域的連續10分鐘ACE不能超出固定上限L<sub>10</sub>，限制調度中心不能過度依賴聯絡線。</p></li></ol><h3 id="NERC成立與控制績效改革"><a href="#NERC成立與控制績效改革" class="headerlink" title="NERC成立與控制績效改革"></a>NERC成立與控制績效改革</h3><p><strong>不要只看ACE，而是連同整體系統頻率都要納入考慮</strong><br>CPS1因此誕生。</p><h2 id="數學定義"><a href="#數學定義" class="headerlink" title="數學定義"></a>數學定義</h2><div>$$\textbf{CPS1} = ( \textbf{2} -  \frac{CF}{ \varepsilon^{2}_{1}} ) \times \textbf{100}$$</div>]]></content>
     
     
     <categories>
