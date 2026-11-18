@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-17T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-18T07:30:06.446Z">
+<meta property="article:modified_time" content="2026-11-18T07:42:55.728Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.3k 字
+          2.5k 字
         
       </span>
     
@@ -354,7 +354,7 @@
         
         
         
-          20 分鐘
+          21 分鐘
         
       </span>
     
@@ -444,8 +444,8 @@ $$
 <p>$\textbf{B}$ 為控制區域內的頻率偏差設定(Balancing Authority Frequency Bias Setting)，代表控制區對頻率變化應提供的一次調頻響應特性，單位為MW&#x2F;0.1Hz。<strong>ACE</strong>除以-10B，即是將功率誤差轉換為<strong>等效頻率偏差</strong>。</p>
 <p>$\varepsilon_{1}$ 為NERC依各互聯系統所制定之目標頻率界限(Target Frequency Bound)對應常數，單位為Hz。<br>其用途為建立互聯系統可接受的頻率品質基準，並作為CPS1評分的比較依據。</p>
 <h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><p>CPS1認為良好的控制區應在系統頻率<strong>降低</strong>時<strong>增加發電</strong>，在系統頻率<strong>升高</strong>時<strong>減少發電</strong>。</p>
-<p>例如：<br>當系統頻率低於額定值時：<br>$$\Delta \textbf{freq} &lt; 0 $$<br>若控制區增加發電支援系統：<br>$$\frac{\textbf{ACE}}{-10\textbf{B}}$$ 變大<br>則：<br>$$\frac{\textbf{ACE}}{-10\textbf{B}} \times \Delta \textbf{freq}$$ 變小<br>代表該控制區正在協助恢復系統頻率。</p>
-<p>反之，若頻率下降時控制區反而減少發電：<br>$$\frac{\textbf{ACE}}{-10\textbf{B}} \times \Delta \textbf{freq}$$ 變大<br>則表示控制區正在惡化系統頻率。</p>
+<p>例如：<br>當系統頻率低於額定值時：<br>$$\Delta \textbf{freq} &lt; 0 $$<br>若控制區增加發電支援系統：<br>$\frac{\textbf{ACE}}{-10\textbf{B}}$ 變大<br>則：<br>$\frac{\textbf{ACE}}{-10\textbf{B}} \times \Delta \textbf{freq}$ 變小<br>代表該控制區正在協助恢復系統頻率。</p>
+<p>反之，若頻率下降時控制區反而減少發電：<br>$\frac{\textbf{ACE}}{-10\textbf{B}} \times \Delta \textbf{freq}$ 變大<br>則表示控制區正在惡化系統頻率。</p>
 <p>因此，CPS1本質上衡量的是：<br><strong>控制區的控制行為是否對整體互聯系統頻率產生正面貢獻。</strong></p>
 <p>最簡易的CPS1判斷就是</p>
 <ul>
@@ -470,8 +470,12 @@ $$
 $$
 </div>
 
-<p>也就是說，CPS1在孤島環境下僅代表了頻率的偏差程度，其物理意義和原始設計目的有了很大的差異。</p>
-
+<p>也就是說，CPS1在孤島環境下僅代表了頻率的偏差程度，其物理意義和原始設計目的有了很大的差異。<br>接著將簡化的ACE帶入CPS1，得出孤島系統的CPS1公式</p>
+<div>
+$$
+\textbf{CPS1} &= ( \textbf{2} -  \frac{ \textbf{AVG}\left( \Delta \text{freq}^{2}\right) }{ \varepsilon^{2}_{1}} ) \times \textbf{100}
+$$
+</div>
                 
               </div>
             
