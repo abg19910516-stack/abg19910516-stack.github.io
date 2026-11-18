@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-17T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-18T02:32:35.863Z">
+<meta property="article:modified_time" content="2026-11-18T02:35:17.241Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -429,7 +429,7 @@ $$
 <li><strong>與整個互聯系統的頻率無關</strong><br>當系統頻率下降時，某區域的ACE為正，輸出電力支援電網。但卻會受A1、A2影響，需減少或停止支撐電網，讓<strong>全系統頻率</strong>更難維持。</li>
 </ol>
 <p>因此在1997年，北美電力可靠度公司(NERC)公布了<strong>CPS1指標</strong>。</p>
-<h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2><p><strong>CPS1</strong>改善了A1和A2的缺點，不再強求ACE固定時間要過零點，全系統頻率偏低時也鼓勵ACE為正支撐電網，並引入了<strong>統計學</strong>的概念評估區域對電網頻率的長期貢獻。</p>
+<h2 id="CPS1-頻率控制效能標準1"><a href="#CPS1-頻率控制效能標準1" class="headerlink" title="CPS1 頻率控制效能標準1"></a>CPS1 頻率控制效能標準1</h2><p><strong>CPS1</strong>改善了A1和A2的缺點，不再強求ACE固定時間要過零點，全系統頻率偏低時也鼓勵ACE為正<strong>支撐電網</strong>，並引入了<strong>統計學</strong>的概念評估區域對電網頻率的長期貢獻。</p>
 <h3 id="數學定義"><a href="#數學定義" class="headerlink" title="數學定義"></a>數學定義</h3><div>
 $$
 \begin{aligned}
@@ -456,7 +456,8 @@ $$
 <h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><p>CPS1認為良好的控制區應在系統頻率<strong>降低</strong>時<strong>增加發電</strong>，在系統頻率<strong>升高</strong>時<strong>減少發電</strong>。</p>
 <p>例如：<br>當系統頻率低於額定值時：<br>$$\Delta \textbf{freq} &lt; 0 $$<br>若控制區增加發電支援系統：<br>$$\textbf{ACE} &gt; 0 $$<br>則：<br>$$\textbf{ACE} \times \Delta \textbf{freq} &lt; 0 $$<br>代表該控制區正在協助恢復系統頻率。</p>
 <p>反之，若頻率下降時控制區反而減少發電：<br>$$\textbf{ACE} \times \Delta \textbf{freq} &gt; 0 $$<br>則表示控制區正在惡化系統頻率。</p>
-<p>因此，CPS1本質上衡量的是：<br><strong>控制區的控制行為是否對整體互聯系統頻率產生正面貢獻。</strong><br>當CPS1等於100時代表符合最低要求，大於100表示控制績效優於要求，小於100則表示未達標準。</p>
+<p>因此，CPS1本質上衡量的是：<br><strong>控制區的控制行為是否對整體互聯系統頻率產生正面貢獻。</strong></p>
+<p>最簡易的CPS1判斷就是<br>「<strong>當CPS1等於100時代表符合最低要求，大於100表示控制績效優於要求，小於100則表示未達標準。</strong>」</p>
 
                 
               </div>
