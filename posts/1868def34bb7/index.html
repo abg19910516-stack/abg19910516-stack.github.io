@@ -27,7 +27,7 @@
 <meta property="og:description" content="解析CPS1 頻率控制效能標準1，以及台灣孤島系統的相關議題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-11-17T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-18T02:35:17.241Z">
+<meta property="article:modified_time" content="2026-11-18T02:48:37.538Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -343,7 +343,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2k 字
+          2.2k 字
         
       </span>
     
@@ -354,7 +354,7 @@
         
         
         
-          17 分鐘
+          19 分鐘
         
       </span>
     
@@ -407,7 +407,7 @@
 <li>但A公司不急著補足不平衡，而是放手依靠對外聯絡線。</li>
 <li>升降載的成本轉嫁給其他併聯的公司。</li>
 </ol>
-<p>為了解決搭便車問題，北美電力可靠度公司(NERC)在1973年制定了最開始的控制標準，<strong>A1</strong>和<strong>A2</strong>。</p>
+<p>為了解決搭便車問題，北美電力可靠度公司(NERC)早期制定了最開始的控制標準，<strong>A1</strong>和<strong>A2</strong>。</p>
 <h3 id="A1、A2控制標準"><a href="#A1、A2控制標準" class="headerlink" title="A1、A2控制標準"></a>A1、A2控制標準</h3><p>在進入<strong>A1與A2</strong>這兩種控制標準前，需要知道衡量區域間供需平衡誤差的指標<strong>ACE</strong>。<br><strong>ACE</strong>全名為Area Control Error (區域控制誤差)<br>公式為以下：</p>
 <div>
 $$
@@ -442,7 +442,7 @@ $$
 </div>
 
 <p>其中：<br>$\text{CF}$ 反映控制區的<strong>ACE與系統頻率偏差之間的關係</strong>。<br>當系統頻率下降時，若控制區增加發電支援系統，則ACE與頻率偏差將呈現負相關，此時CF將趨向負值；反之，若控制區的控制行為惡化頻率偏差，則CF將趨向正值。</p>
-<p>$\varepsilon_{1}$ 為NERC所定義之頻率績效常數(Frequency Performance Constant)，其用途為建立互聯系統可接受的頻率品質基準，並作為CPS1評分的比較依據。<br>在NERC的標準中訂為以下公式，具體概念為「<strong>正常運轉狀況下，互聯系統天然AEC的擾動</strong>」</p>
+<p>$\varepsilon_{1}$ 為NERC所定義之頻率績效常數(Frequency Performance Constant)，其用途為建立互聯系統可接受的頻率品質基準，並作為CPS1評分的比較依據。<br>在NERC的標準中訂為以下公式，具體概念為「<strong>正常運轉狀況下，互聯系統天然功率不平衡的擾動</strong>」</p>
 <div>
 $$
 \begin{aligned}
@@ -458,6 +458,14 @@ $$
 <p>反之，若頻率下降時控制區反而減少發電：<br>$$\textbf{ACE} \times \Delta \textbf{freq} &gt; 0 $$<br>則表示控制區正在惡化系統頻率。</p>
 <p>因此，CPS1本質上衡量的是：<br><strong>控制區的控制行為是否對整體互聯系統頻率產生正面貢獻。</strong></p>
 <p>最簡易的CPS1判斷就是<br>「<strong>當CPS1等於100時代表符合最低要求，大於100表示控制績效優於要求，小於100則表示未達標準。</strong>」</p>
+<h2 id="CPS2-頻率控制效能標準2"><a href="#CPS2-頻率控制效能標準2" class="headerlink" title="CPS2 頻率控制效能標準2"></a>CPS2 頻率控制效能標準2</h2><p>有了電網的<strong>長期指標</strong>CPS1，在實務上還是稍顯不足。<br>控制區域短時間內出現很明顯的ACE偏差，CPS1仍可以依靠大量平均把它稀釋。<br>所以NERC進一步提出了<strong>CPS2 頻率控制效能標準2</strong></p>
+<h3 id="核心概念-1"><a href="#核心概念-1" class="headerlink" title="核心概念"></a>核心概念</h3><p>CPS2如同前章A2指標。</p>
+<ol>
+<li>統計期間為十分鐘</li>
+<li>計算平均ACE</li>
+<li>檢查是否超過上限L<sub>10</sub><br>超出則記錄一次違規。</li>
+</ol>
+<p>其目的在於「<strong>避免長期平均掩蓋了短期的控制失效。</strong>」</p>
 
                 
               </div>
