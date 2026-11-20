@@ -27,7 +27,7 @@
 <meta property="og:description" content="電力系統從發電到用戶端，大致可以分為發、輸、配、售，這四個不同的部門。在台灣，這四個部門由台電公司一手包辦，是綜合電業，僅僅在綠電方面保持自由開放的市場。但在電力交易發展成熟的英國，不只在發電有自由競爭的市場，輸配售也有相對應的自由市場機制。本篇將針對英國電力體制中各部門與單位的權責分工，進行詳細的紀錄與探討。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-08-31T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-17T03:28:02.713Z">
+<meta property="article:modified_time" content="2026-11-20T01:05:54.380Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -642,6 +642,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -896,6 +902,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/openkounter.js" ></script>
 

@@ -27,7 +27,7 @@
 <meta property="og:description" content="ECVN(Energy Contract Volume Notification, 能源合約電量通知)是英國電力市場中重要的關鍵配套，其核心目的是為了解決電力自由交易下的資訊不對稱情況(電網無法得知發購電雙方的私下合約，造成電網供需平衡的困擾無法有效責任歸屬)。ECVN透過合約雙方提交電量帳本的方式，發購電雙方僅需透漏某時段內預計傳輸與接收的電量，即可將雙方維持電網供需平衡的責任，進行合理歸屬。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2026-09-02T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-17T03:28:56.176Z">
+<meta property="article:modified_time" content="2026-11-20T01:06:02.500Z">
 <meta property="article:author" content="PowerMan">
 <meta property="article:tag" content="電力系統">
 <meta property="article:tag" content="電力工程">
@@ -607,6 +607,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -861,6 +867,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script defer src="/js/openkounter.js" ></script>
 
